@@ -7,6 +7,9 @@
 > Markdown is a lightweight markup language that allows people to write documents using a plain text format that is easy to read and write, and then convert them into richly formatted HTML pages. — [Wikipedia](https://en.wikipedia.org/wiki/Markdown)
 
 
+<div style="page-break-before: always;"></div>
+
+
 ## Main Features
 
 ### 1. Code Blocks
@@ -71,7 +74,7 @@ Use `- [ ]` and `- [x]` syntax to create checkboxes, useful for todo-lists. For 
 
 ### 6. Images
 
-![picture](./demo.png)
+![picture](https://suqingdong.github.io/md2pdf/tests/demo.png)
 
 ### 7. Blocks
 

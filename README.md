@@ -1,21 +1,41 @@
+![PyPI - Version](https://img.shields.io/pypi/v/md2pdf-python)
+![PyPI - Status](https://img.shields.io/pypi/status/md2pdf-python)
+
 # A user-friendly tool for converting Markdown to PDF
 
 ## Installation
 
 ```bash
-npm install -g markdown-to-pdf
+pip install md2pdf-python
 ```
 
 ## Usage
 
+### Use in CMD
+
 ```bash
-markdown-to-pdf <file.md> <output.pdf>
+md2pdf --help
+
+md2pdf tests/demo.md -o tests/output-default.pdf
+md2pdf tests/demo.md -o tests/output-default.pdf --html
+md2pdf tests/demo.md -o tests/output-styles.pdf --css-file tests/demo.css --mermaid-config tests/demo.json
 ```
 
-## Contributing
+### Use in Python
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+```python
+from md2pdf.core.converter import MD2PDF
 
-Please make sure to update tests as appropriate.
+md2pdf(input_file='input.md', output_file='output.pdf')
+md2pdf(input_file='input.md', output_file='output.pdf', html=True)
+md2pdf(input_file='input.md', output_file='output.pdf', css_file='custom.css')
+md2pdf(input_file='input.md', output_file='output.pdf', css_file='custom.css', mermaid_config='custom-config.json')
+```
 
-## License
+**mermaid render** is based on [Mermaid-CLI (mmdc)](https://www.npmjs.com/package/@mermaid-js/mermaid-cli), install it with:
+`npm install -g @mermaid-js/mermaid-cli`
+
+## Demo
+- INPUT: [demo.md](https://suqingdong.github.io/md2pdf/tests/demo.md)
+- OUTPUT-DEFAULT: [output-default.pdf](https://suqingdong.github.io/md2pdf/tests/output-default.pdf)
+- OUTPUT-STYLES: [output-styles.pdf](https://suqingdong.github.io/md2pdf/tests/output-styles.pdf)

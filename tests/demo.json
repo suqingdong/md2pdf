@@ -1,0 +1,7 @@
+{
+  "theme": "default",
+  "themeVariables": {
+    "fontFamily": "Times New Roman, serif"
+  },
+  "backgroundColor": "#F2F2F2"
+}

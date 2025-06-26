@@ -1,0 +1,13 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #f3f6d8;
+}
+
+h1, h2, h3 {
+    color: #2994af;
+}
+
+code {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.25;
+}
