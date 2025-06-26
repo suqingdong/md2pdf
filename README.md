@@ -1,6 +1,8 @@
 ![PyPI - Version](https://img.shields.io/pypi/v/md2pdf-python)
 ![PyPI - Status](https://img.shields.io/pypi/status/md2pdf-python)
 
+---
+
 # A user-friendly tool for converting Markdown to PDF
 
 ## Installation
@@ -32,8 +34,59 @@ md2pdf(input_file='input.md', output_file='output.pdf', css_file='custom.css')
 md2pdf(input_file='input.md', output_file='output.pdf', css_file='custom.css', mermaid_config='custom-config.json')
 ```
 
+### Customize CSS
+
+```css
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+}
+h1 {
+    color: red;
+}
+h2 {
+    color: blue;
+}
+h3 {
+    color: green;
+}
+p {
+    color: black;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+```
+
+### Customize Mermaid Config
+
+```json
+{
+  "theme": "default",
+  "themeVariables": {
+    "fontFamily": "Times New Roman, serif"
+  },
+  "backgroundColor": "#F2F2F2"
+}
+```
+
+---
+
+## Support Features
+- [x] TOC
+- [x] Table
+- [x] Quote
+- [x] Code Block
+- [x] Inline Code
+- [x] Image
+- [x] Checkbox
+- [x] Mermaid
+
 **mermaid render** is based on [Mermaid-CLI (mmdc)](https://www.npmjs.com/package/@mermaid-js/mermaid-cli), install it with:
 `npm install -g @mermaid-js/mermaid-cli`
+
+---
 
 ## Demo
 - INPUT: [demo.md](https://suqingdong.github.io/md2pdf/tests/demo.md)
